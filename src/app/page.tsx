@@ -18,11 +18,12 @@ import { useState } from 'react'
 
 export default function Home() {
 
+  //fixed for control
   const [isFormOpen,setFormOpen] = useState(false)
 
   return (
     <>
-      <Banner/>
+      <Banner setFormOpen={setFormOpen}/>
       <Gaurantee/>
       <div className='block sm:hidden'>
         <MobileForm/>

@@ -22,9 +22,9 @@ const FixedForm = ({isFormOpen,setFormOpen}) => {
   
       <button 
         onClick={() => setFormOpen(true)}
-        className="fixed  text-[.8rem] sm:text-[1rem] sm:w-[200px] sm:min-w-[200px] top-1/3 right-0 origin-bottom-right rotate-[-90deg] z-[100] 
+        className="fixed  text-[.7rem] sm:text-[1rem] sm:w-[200px] sm:min-w-[200px] top-1/3 right-0 origin-bottom-right rotate-[-90deg] z-[100] 
         bg-yellow-400 text-black px-5 py-3 font-semibold shadow-lg hover:bg-opacity-80 transition">
-        GET FREE QUOTE
+        GET QUOTE
         {/* right-[-12%] md:right-0  xl:right-[-4%] 2xl:right-[-3%] */}
       </button>
 

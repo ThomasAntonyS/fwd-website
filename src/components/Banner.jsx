@@ -6,7 +6,7 @@ import Logo from '../assests/Logo.png';
 import { IoMdClose } from "react-icons/io";
 
 
-const Banner = () => {
+const Banner = ({setFormOpen}) => {
   const [step, setStep] = useState(1);
   const [isOpen,setOpen] = useState(true)
 
@@ -31,7 +31,7 @@ const Banner = () => {
 
       <div className="flex justify-between px-4 bg-white items-center h-[8vh]">
         <Image src={Logo} alt="Logo" height={50} width={100} objectFit="contain" />
-        <button className="bg-yellow-500 text-black text-sm px-4 py-2 rounded-full font-semibold hover:bg-yellow-600" onClick={()=>setOpen(true)}>
+        <button className="bg-yellow-500 text-black text-sm px-4 py-2 rounded-full font-semibold hover:bg-yellow-600" onClick={()=>setFormOpen(true)}>
           GET FREE QUOTE
         </button>
       </div>
